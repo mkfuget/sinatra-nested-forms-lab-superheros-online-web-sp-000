@@ -8,7 +8,8 @@ class App < Sinatra::Base
     end
     
     post "/superhero" do 
-      
+      @team = Team.new(params[:team])
+      params[:team][:hero]
     end
 
   
